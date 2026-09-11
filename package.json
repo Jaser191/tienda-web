@@ -1,0 +1,17 @@
+{
+  "name": "modulo1-proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto integrador del Módulo 1",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

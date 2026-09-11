@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Módulo 1</title>
+    <!-- Referencia CSS de Bootstrap desde node_modules -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Jumbotron con el título del proyecto -->
+    <div class="jumbotron jumbotron-fluid text-center bg-dark text-white">
+        <div class="container">
+            <h1 class="display-4">Tienda de Productos Exclusivos</h1>
+            <p class="lead">Bienvenido a la solución integral desarrollada para el Módulo 1.</p>
+        </div>
+    </div>
+
+    <!-- Container con 3 párrafos y título contando características -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Principales Características</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Innovación</h4>
+                <p>Implementamos tecnologías modernas orientadas a ofrecer la mejor experiencia de usuario interactiva y rápida en cualquier dispositivo.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Rendimiento</h4>
+                <p>Optimizado al máximo nivel utilizando herramientas de automatización y gestión de dependencias profesionales con NPM.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Diseño Adaptable</h4>
+                <p>Estructuras responsivas basadas en grillas fluidas y contenedores flexibles que se amoldan a celulares, tablets y PCs.</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Lista de productos usando grillas y transformado a flex -->
+        <h2 class="text-center mb-4">Listado de Productos</h2>
+        
+        <!-- Contenedor transformado a Flexbox (según requerimiento) -->
+        <div class="productos-flex-container">
+            
+            <!-- Producto 1 -->
+            <div class="producto-card productos-flex-item">
+                <h3 class="producto-titulo">Producto Destacado 1</h3>
+                <p class="producto-descripcion">Descripción detallada de las ventajas y funciones principales de este excelente artículo.</p>
+                <button class="btn btn-primary btn-block">Comprar</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-card productos-flex-item">
+                <h3 class="producto-titulo">Producto Destacado 2</h3>
+                <p class="producto-descripcion">Descripción detallada de las ventajas y funciones principales de este excelente artículo.</p>
+                <button class="btn btn-primary btn-block">Comprar</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card productos-flex-item">
+                <h3 class="producto-titulo">Producto Destacado 3</h3>
+                <p class="producto-descripcion">Descripción detallada de las ventajas y funciones principales de este excelente artículo.</p>
+                <button class="btn btn-primary btn-block">Comprar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sección de Footer con alineaciones a la izquierda, centro y derecha -->
+    <footer class="bg-light text-dark py-4 mt-5 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- Izquierda: Información del comercio usando el componente address -->
+                <div class="col-md-4 text-left">
+                    <h5>Contacto</h5>
+                    <address class="mb-0">
+                        <strong>Comercio Módulo 1</strong><br>
+                        Av. Principal 123, Ciudad<br>
+                        Email: contacto@tudominio.com
+                    </address>
+                </div>
+
+                <!-- Centro: Redes sociales -->
+                <div class="col-md-4 text-center">
+                    <h5>Redes Sociales</h5>
+                    <p class="mb-0">
+                        <a href="#" class="text-dark mx-2">Facebook</a> | 
+                        <a href="#" class="text-dark mx-2">Instagram</a> | 
+                        <a href="#" class="text-dark mx-2">Twitter</a>
+                    </p>
+                </div>
+
+                <!-- Derecha: Detalles del sitio -->
+                <div class="col-md-4 text-right">
+                    <h5>Acerca del Sitio</h5>
+                    <p class="mb-0 text-muted">Desarrollado para fines educativos.<br>&copy; 2026 Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Referencias JS de jQuery, Popper y Bootstrap desde node_modules (en el body) -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
