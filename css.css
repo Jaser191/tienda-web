@@ -1,38 +1,37 @@
-/* Estilos replicables para los productos del listado */
-.producto-card {
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    transition: transform 0.2s ease;
+/* Ajuste para evitar que el navbar fijo tape el contenido */
+body {
+    padding-top: 70px;
 }
 
-.producto-card:hover {
+/* Banner de la página principal */
+.jumbotron-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.producto-titulo {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
-.producto-descripcion {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-/* Transformación del sistema de grillas a flex para los productos */
-.productos-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.productos-flex-item {
-    flex: 1 1 300px;
-    max-width: 350px;
+/* Contenedor de la tabla con scroll sin deformar la página */
+.table-responsive-custom {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
 }
