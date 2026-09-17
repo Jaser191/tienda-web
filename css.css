@@ -3,15 +3,6 @@ body {
     padding-top: 70px;
 }
 
-/* Banner de la página principal */
-.jumbotron-banner {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    border-radius: 0.5rem;
-}
-
 /* Estilos para las tarjetas de productos */
 .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -27,7 +18,13 @@ body {
     object-fit: cover;
 }
 
-/* Contenedor de la tabla con scroll sin deformar la página */
+/* Ajuste visual para el carrusel superior */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Contenedor de la tabla con scroll */
 .table-responsive-custom {
     max-height: 350px;
     overflow-y: auto;
