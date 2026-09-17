@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Detalles - Tienda Exclusiva</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Open Iconic CSS -->
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="oi oi-home"></span> TiendaWeb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">Contacto y Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto y Detalles</li>
+            </ol>
+        </nav>
+
+        <h1 class="mb-4">Contacto y Especificaciones</h1>
+
+        <div class="row">
+            <!-- Formulario completo requerido (email, select, checkbox, texto y textarea) -->
+            <div class="col-md-6 mb-5">
+                <div class="card shadow-sm p-4">
+                    <h3 class="mb-3 font-weight-bold">Formulario de Contacto</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo (Texto)</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico (Email)</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo de consulta (Seleccionable)</label>
+                            <select class="form-control" id="motivo">
+                                <option>Consulta general</option>
+                                <option>Soporte técnico</option>
+                                <option>Suscripción a servicios</option>
+                                <option>Compra de productos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje (Textarea)</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu comentario..." required></textarea>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="terminos" required>
+                            <label class="form-check-label" for="terminos">Acepto los términos (Checkbox)</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block"><span class="oi oi-mail-open"></span> Enviar Comentario</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tabla con scroll e iconos Open Iconic -->
+            <div class="col-md-6 mb-5">
+                <h3 class="mb-3 font-weight-bold">Detalles y Envíos</h3>
+                <p class="text-muted">Tabla con scroll integrado:</p>
+
+                <div class="table-responsive-custom shadow-sm">
+                    <table class="table table-striped table-bordered mb-0 bg-white">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Destino</th>
+                                <th scope="col">Plazo</th>
+                                <th scope="col">Estado (Open Iconic)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Zona Norte</td>
+                                <td>24 a 48 hs</td>
+                                <td><span class="oi oi-check text-success"></span> Disponible</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Zona Centro</td>
+                                <td>24 hs</td>
+                                <td><span class="oi oi-check text-success"></span> Disponible</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Zona Sur</td>
+                                <td>48 a 72 hs</td>
+                                <td><span class="oi oi-check text-success"></span> Disponible</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Áreas Rurales</td>
+                                <td>3 a 5 días</td>
+                                <td><span class="oi oi-warning text-warning"></span> Limitado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Envíos al Exterior</td>
+                                <td>7 a 14 días</td>
+                                <td><span class="oi oi-info text-info"></span> Consultar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 TiendaWeb. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
