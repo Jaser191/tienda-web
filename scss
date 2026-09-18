@@ -1,0 +1,32 @@
+/* Variables de colores requeridas */
+$color-amarillo: #ffc107;
+$color-rojo: #dc3545;
+$color-verde: #28a745;
+
+/* Mixin que contiene márgenes, padding y colores */
+@mixin estilo-personalizado($mg, $pd, $bg-color) {
+    margin: $mg;
+    padding: $pd;
+    background-color: $bg-color;
+    border-radius: 5px;
+}
+
+/* Aplicación de estilos base */
+body {
+    padding-top: 70px;
+}
+
+.alerta-personalizada {
+    @include estilo-personalizado(15px, 20px, $color-amarillo);
+    color: #333;
+}
+
+.btn-custom-rojo {
+    background-color: $color-rojo;
+    color: white;
+}
+
+.btn-custom-verde {
+    background-color: $color-verde;
+    color: white;
+}
